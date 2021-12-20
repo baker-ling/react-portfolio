@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
+  @apply bg-neutral-900;
+  @apply text-stone-200;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -14,4 +16,52 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+nav li {
+  @apply pr-6;
+}
+
+main {
+  @apply container mx-auto px-4 text-left
+}
+
+main p,
+main ul {
+  @apply my-3 font-serif
+}
+
+li::marker {
+  @apply text-yellow-400
+}
+
+main h2 {
+  @apply text-4xl font-bold text-yellow-400 underline decoration-stone-50 underline-offset-4 decoration-4
+}
+
+main h3 {
+  @apply text-2xl font-semibold my-3
+}
+
+
+/* Contact Form styles */
+form {
+  @apply md:m-5 lg:m-10
+}
+
+div.form-item {
+  @apply flex flex-row my-4 gap-x-6 flex-wrap
+}
+
+div.form-item label {
+  @apply flex-grow-0 flex-shrink-0 w-40
+}
+
+div.form-item input,
+div.form-item textarea {
+  @apply text-stone-900 px-1 shadow shadow-stone-500 w-80 flex-shrink-0
+}
+
+div.warning {
+  @apply text-red-500 basis-full lg:basis-auto
 }
