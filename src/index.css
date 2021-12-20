@@ -65,3 +65,15 @@ div.form-item textarea {
 div.warning {
   @apply text-red-500 basis-full lg:basis-auto
 }
+
+/* Project styles */
+article div.project-links {
+  @apply hidden
+}
+article:hover div.project-links{
+  @apply flex flex-row items-center justify-evenly my-12
+}
+
+article:hover div.project-links div {
+  @apply rounded-full bg-yellow-900 bg-opacity-75 h-28 aspect-square text-center align-middle flex justify-center items-center font-semibold 
+}

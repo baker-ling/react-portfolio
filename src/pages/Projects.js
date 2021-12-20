@@ -1,7 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
+import ProjectList from '../components/ProjectList';
+import SingleProject from '../pages/SingleProject'
+
+const projectData = require('./projectData.json');
+
 
 export default function Projects(props) {
+  const [currentProject, setCurrentProject] = useState(null);
   return (
-    <h2>About Me</h2>
+    (currentProject) ? 
+      <SingleProject currentProject={currentProject} setCurrentProject={setCurrentProject} />
+    :
+      <ProjectList projectData={projectData} setCurrentProject={setCurrentProject} />
   );
 }
