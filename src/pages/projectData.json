@@ -1,0 +1,74 @@
+[
+  {
+    "name": "I Choose Who?",
+    "blurb": "Node / Handlebars / MySQL + Sequelize / Bulma / jQuery + Selectize",
+    "description": "<p>This is an that recommends pokémon to use in Pokémon Go battles. The goal is to make it easier to select pokémon for particularly hard NPC battles.</p><p>You use the app by creating an account, adding the pokémon to your collection based on what you have in the Pokémon Go game, and marking pokémon you want priortized as favorites (if they are at a higher level in your actual Pokémon Go collection). Then, you can go to the Recommendations page and get recommendations based on type or enemy pokémon.</p><p>It was built as a team project with <a href=\"https://github.com/mdbow22\" target=\"_blank\" rel=\"noopener noreferrer\">Matt Bow</a> and <a href=\"https://github.com/GRiveroll86/\" target=\"_blank\" rel=\"noopener noreferrer\">Greg Riveroll</a>.</p>",
+    "screenshotURL": "img/ichoosewho_screenshot.png",
+    "githubURL": "https://github.com/mdbow22/I-Choose-Who",
+    "deployedURL": "http://ichoosewho.com" 
+  },
+  {
+    "name": "Readme Generator",
+    "blurb": "Node / Inquirer",
+    "description": "<p>This is a command-line app to generate markdown readme files to post on github. It has saved me an immense amount of time writing up readme files for projects and homework assignments. While very simple, it has been incredibly useful.</p>",
+    "screenshotURL": "img/readme_generator.png",
+    "githubURL": "https://github.com/baker-ling/readme_generator",
+    "deployedURL": null
+  },
+  {
+    "name": "bdBTS - b.d.Baker's Tech Site",
+    "blurb": "Node / Bulma / Handlebars / MySQL",
+    "description": "This is a very simple blog site built with user creation, login sessions, the ability to post articles and comments, and the ability to edit and delete comments.",
+    "screenshotURL": "img/bdBTS_post_comment.png",
+    "githubURL": "https://github.com/baker-ling/bdBTS",
+    "deployedURL": "https://glacial-ravine-27881.herokuapp.com/" 
+  },
+  {
+    "name": "Online Grammar Atlas of Japanese Dialects Data Viewer",
+    "blurb": "Vanilla JavaScript / Google Maps API v3",
+    "description": "<p>This was a capstone project for my MA program in Japanese linguistics. The goal of the project was to make it easy for linguists to generate their own custom maps based on the Japanese dialect data from the <a href=\"https://www2.ninjal.ac.jp/hogen/dp/gaj-pdf/gaj-pdf_index.html\" target=\"_blank\" rel=\"noopener noreferrer\"><cite>Grammar Atlas of Japanese Dialects</cite></a>. With this tool, a linguist, dialectologist, or anyone with an interest in Japanese dialects could construct their own queries for locations to mark on the map without any special software needed, making it easier to draw insights on Japanese dialects and language development. </p>",
+    "screenshotURL": "img/online_gajd_viewer.png",
+    "githubURL": null,
+    "deployedURL": null
+  },
+  {
+    "name": "VBA Unicode Tools",
+    "blurb": "VBA / VB Editor / Unicode",
+    "description": "<p>This is a pair of VBA macros for use with the VB Editor in MS Office applications on Windows. The goal of the macros is to make it easier to work with Unicode characters in VBA code. While VBA does support Unicode for string manipulation, it does not support Unicode in its own code editor. This means that if you have strings of text in a different script in your code, then those strings are coded as sequences of function calls to convert Unicode code points to characters, which is almost impossible for a human to read. </p>",
+    "screenshotURL": "img/prompt_for_unicode_0-564.gif",
+    "githubURL": "https://github.com/baker-ling/VBAUnicodeTools",
+    "deployedURL": null
+  },
+  {
+    "name": "Translator Toolkit",
+    "blurb": "VBA / CustomUI XML",
+    "description": "<p>I developed this PowerPoint add-in to make it faster and easier to do formatting work that happens before, after, or during the translation of PowerPoint files. The add-in is built with VBA to achieve the functionality and CustomUI XML to create the Ribbon customization. I localized the user interface to Japanese, and the add-in will display in Japanese if that is the user's current display language.</p><p>The next step for this project is to incorporate machine learning to remove mid-sentence line and paragraph breaks from Japanese text.</p><p>Unfortunately, the copyright to this add-in is held by TS Tech Co., Ltd., who has not granted permission to redistribute publicly.</p>",
+    "screenshotURL": "img/ttk_combined.png",
+    "githubURL": null,
+    "deployedURL": null 
+  },
+  {
+    "name": "Japanese Accent Annotator",
+    "blurb": "Python / Japanese NLP tools",
+    "description": "<p>I am developing this Python program to solve a problem that I had as a graduate teaching associate: I wanted to put accent annotations on all my Japanese example sentences that I showed my students, but the process of writing and checking those annotations was painstaking. This program uses the off-the-shelf tools <a href=\"https://github.com/polm/fugashi\" target=\"_blank\" rel=\"noopener noreferrer\">fugashi</a> (Python wrapper for morphological analysis engine Mecab), <a href=\"https://unidic.ninjal.ac.jp/\" target=\"_blank\" rel=\"noopener noreferrer\">UniDic</a> (a morphological analysis dictionary for Japanese with accent data), and <a href=\"http://chikusei.lv9.org/cms-z/zomeki-1.0.4/ext/morph/chaone/manual.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">ChaOne</a> (a set of XSLTs for chunking Japanese tokens, originally meant for speech synthesis). I eventually hope to package it into a PowerPoint add-in as a gift to my former self.</p>",
+    "screenshotURL": "img/jaan.png",
+    "githubURL": "https://github.com/baker-ling/ja_accent_annotator",
+    "deployedURL": null 
+  },
+  {
+    "name": "Bilingual Meeting Note Taker",
+    "blurb": "Materialize CSS Framework / JavaScript / Online APIs",
+    "description": "<p>This is a app for taking meeting notes for a bilingual meeting where the meeting notes can be translated on the fly so that everyone in the meeting can see what notes are being taken regardless of their language. This app was motivated by an experience I had where I was interpreting for an online bilingual meeting where a Japanese-speaking participant was sharing his computer screen while typing meeting notes that English-speaking participants could not read.</p><p>The app is styled using the CSS framework Materialize. It uses the online API from LibreTranslate to machine translate notes at the touch of a button. It also uses the online Pantry API to store past meeting notes in the cloud for later retrieval by the author or other participants.</p>",
+    "screenshotURL": "img/bilingual_notetaker_meeting.png",
+    "githubURL": "https://github.com/baker-ling/osu_bcs_project1",
+    "deployedURL": "https://baker-ling.github.io/osu_bcs_project1/index.html" 
+  },
+  {
+    "name": "Budget Tracker PWA",
+    "blurb": "PWA / IndexedDB / MongoDB",
+    "description": "<p>This is a simple single-user budget taking app with an online and offline mode that is installable as a PWA. The backend is built with Node and MongoDB, and the frontend with IndexedDB via the wrapper library Dexie. All transactions are stored both locally and on the online server. When offline, any transactions entered on the client will be kept in a buffer that is synced to the server the next time the user comes online.</p>",
+    "screenshotURL": "img/budget_tracker_screenshot.png",
+    "githubURL": "https://github.com/baker-ling/budget_tracker_pwa",
+    "deployedURL": "https://ancient-ridge-88904.herokuapp.com/" 
+  }
+]
