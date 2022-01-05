@@ -66,8 +66,8 @@
     "description": "<p>This is a app for taking meeting notes for a bilingual meeting where the meeting notes can be translated on the fly so that everyone in the meeting can see what notes are being taken regardless of their language. This app was motivated by an experience I had where I was interpreting for an online bilingual meeting where a Japanese-speaking participant was sharing his computer screen while typing meeting notes that English-speaking participants could not read.</p><p>The app is styled using the CSS framework Materialize. It uses the online API from LibreTranslate to machine translate notes at the touch of a button. It also uses the online Pantry API to store past meeting notes in the cloud for later retrieval by the author or other participants.</p>",
     "screenshotURL": "img/bilingual_notetaker_meeting.png",
     "aspect":"square",
-    "githubURL": "https://github.com/baker-ling/osu_bcs_project1",
-    "deployedURL": "https://baker-ling.github.io/osu_bcs_project1/index.html" 
+    "githubURL": "https://github.com/baker-ling/bilingual_note_taker",
+    "deployedURL": "https://baker-ling.github.io/bilingual_note_taker/" 
   },
   {
     "name": "Budget Tracker PWA",
