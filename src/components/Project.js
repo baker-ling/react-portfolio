@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Project({setCurrentProject, data: {name, blurb, description, screenshotURL, aspect, githubURL, deployedURL}}) {
+export default function Project({setCurrentProject, data: {name, blurb, shortDescription, screenshotURL, aspect, githubURL, deployedURL}}) {
   return (
     <article style={{backgroundImage: `url("${screenshotURL}")`}} 
       className={`aspect-square
@@ -15,9 +15,10 @@ export default function Project({setCurrentProject, data: {name, blurb, descript
       <h3 className='text-xl md:text-4xl 
                       bg-opacity-75 bg-stone-900 text-stone-50 max-w-max m-6 px-4 py-2 rounded-xl'>{name}</h3>
       <h4 className='text-lg md:text-2xl bg-opacity-75 bg-stone-900 text-yellow-300 max-w-max m-6 px-4 py-1 rounded-xl'>{blurb}</h4>
+      <div className='short-description'>{shortDescription}</div>
       <div className='project-links'>
         {(githubURL) ? <a href={githubURL} target='_blank' rel='noreferrer'><div><span>GitHub</span></div></a> : ''}
-        {(deployedURL) ? <a href={githubURL} target='_blank' rel='noreferrer'><div><span>Online App</span></div></a> : ''}
+        {(deployedURL) ? <a href={deployedURL} target='_blank' rel='noreferrer'><div><span>Online App</span></div></a> : ''}
       </div>
     </article>
   );
