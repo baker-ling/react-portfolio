@@ -8,7 +8,7 @@ export default function Resume(props) {
       <div>
         <h3>Download</h3>
         <ul className='list-disc list-outside ml-6'>
-          <li>My résumé is available for download <a href="/pdf/Baker_CV.pdf" className='text-yellow-300'>here</a>.</li>
+          <li>My résumé is available for download <a href={process.env.PUBLIC_URL + "/pdf/Baker_CV.pdf"} className='text-yellow-300'>here</a>.</li>
         </ul>
         <h3>Frontend Proficiencies</h3>
         <ul className='list-disc list-outside ml-6'>
@@ -17,7 +17,7 @@ export default function Resume(props) {
           <li>JavaScript</li>
           <li>jQuery</li>
           <li>Responsive design</li>
-          <li>REST & GraphQL API consumption</li>
+          <li>REST &amp; GraphQL API consumption</li>
           <li>React</li>
           <li>Bootstrap</li>
           <li>Bulma</li>

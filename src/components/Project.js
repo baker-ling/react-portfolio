@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Project({setCurrentProject, data: {name, blurb, shortDescription, screenshotURL, aspect, githubURL, deployedURL}}) {
   return (
-    <article style={{backgroundImage: `url("${screenshotURL}")`}} 
+    <article style={{backgroundImage: `url("${process.env.PUBLIC_URL + '/' + screenshotURL}")`}} 
       className={`aspect-square
         bg-stone-900
         hover:bg-opacity-75 hover:bg-blend-soft-light
