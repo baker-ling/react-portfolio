@@ -1,9 +1,11 @@
 import React from 'react';
 
+import avatar from './../img/AvatarMaker.svg';
+
 export default function About(props) {
   return (
     <main>
-      <img src="img/AvatarMaker.svg" alt="Brian's avatar" className='rounded-full border-2 h-28 sm:h-52 lg:h-72 float-right m-2' />
+      <img src={avatar} alt="Brian's avatar" className='rounded-full border-2 h-28 sm:h-52 lg:h-72 float-right m-2' />
       <h2 >About Me</h2>
       <div>
         <p>My name is Brian Baker (he/him/his/ベーカー). I was educated as a historical linguist, and I currently work as a professional translator and interpreter of Japanese and English.</p>
