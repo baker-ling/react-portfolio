@@ -123,7 +123,7 @@ export default function Contact(props) {
          className='font-bold border-yellow-500 border-2 bg-yellow-300 text-stone-900 px-4 py-1 rounded active:bg-yellow-900 active:text-stone-200'/>
       </form>
 
-      <p>You can also reach me via <a href="mailto:brian.baker.bdb@gmail.com">email</a>.</p>
+      <p>You can also reach me via <a href="mailto:brian.baker.bdb@gmail.com">email (brian.baker.bdb@gmail.com)</a>.</p>
     </main>
   );
 }
