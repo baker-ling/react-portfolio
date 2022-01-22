@@ -1,18 +1,32 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
 const isValidEmailAddress = (email) => {
   const pattern = /^\S+@\S+$/giu;
   return pattern.test(email);
 }
 
+const initialFormState = { name: '', email: '', message: '' };
+
 export default function Contact(props) {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+  const [formState, setFormState] = useState(initialFormState);
   const [warningSuppressionFlags, setWarningSuppresionFlags] = useState({ name: true, email: true, message: true })
   const [validationWarnings, setValidationWarnings] = useState({
     name: 'You must enter a name.',
     email: 'You must provide an email address to reach you.',
     message: 'You must enter a message.'
-  })
+  });
+  const [{error, response}, setPageclipResult] = useState({error: null, response: null});
+
+  useEffect(() => {
+    if (error) {
+      console.error(error);
+      window.alert('There was an error sending your message. 🙇🏻‍♂️ Please send your message via email to brian.baker.bdb@gmail.com.')
+    } else if (response) {
+      window.alert('Your message was successfully submitted. Brian will try to get back to you soon. Thank you!');
+      setFormState(initialFormState);
+      setWarningSuppresionFlags({ name: true, email: true, message: true });
+    }
+  }, [error, response]);
 
   const handleFormChange = (event) => {
     const {target} = event;
@@ -52,12 +66,18 @@ export default function Contact(props) {
   const handleFormSubmit = (event) => {
     event.preventDefault();
 
-    if (!validationWarnings.name && !validationWarnings.email && ! validationWarnings.message) {
-      window.alert('Thank you for the message. The send message feature has not been implemented yet. Please send your message via email to brian.baker.bdb@gmail.com.')
-    } else {
+    if (validationWarnings.name || validationWarnings.email || validationWarnings.message) {
       window.alert('Please complete the contact form before sending your message.');
+      return;
     }
-
+    const dataPayload = {
+      name: formState.name.trim(),
+      email: formState.email.trim(),
+      message: formState.message.trim()
+    }
+    window.Pageclip.send('IJkrDtaf9rbgqGk6KINcTcdKBMbD0j8o', 'portfolio-contact-form', dataPayload, 
+      (error, response) => setPageclipResult({error, response})
+    );
   }
 
   return (
