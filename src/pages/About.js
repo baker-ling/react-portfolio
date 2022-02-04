@@ -24,7 +24,7 @@ export default function About(props) {
 
         <p>I am primarily seeking fulltime employment as an application developer, but I am interested in freelance or part-time web development work. If you have any jobs and are seeking a developer with my skillset, please contact me via the Contact page, by email, or on one of my social media links. </p>
 
-        <p>Outside of linguistics and technology, I enjoy specialty coffee (esp. coffee heavy on fruity or floral notes), tea, soccer (watching and playing, though not so good at the latter), tennis (watching and playing, though pretty bad at the latter), video games. I have a modest collection of fountain pens, neckties that I almost never wear, and tenuguis that I collected while living in and travelling to Japan.</p>
+        <p>Outside of linguistics and technology, I enjoy specialty coffee (esp. coffee heavy on fruity or floral notes), tea, soccer (watching and playing, though not so good at the latter), tennis (watching and playing, though pretty bad at the latter), and video games. I have a modest collection of fountain pens, neckties that I almost never wear, and tenuguis that I collected while living in and travelling to Japan.</p>
 
       </div>
     </main>
